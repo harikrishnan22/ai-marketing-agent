@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+
+.env
+.env.*
+
+marketing.db
+
+.streamlit/
+
+.DS_Store
+
+venv/
+.venv
+
+.idea/
+.vscode/
