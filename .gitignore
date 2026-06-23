@@ -15,3 +15,8 @@ venv/
 
 .idea/
 .vscode/
+
+storage/
+
+*.db
+chromadb/
