@@ -2,6 +2,7 @@ import sqlite3
 import pandas as pd
 from openai import OpenAI
 import chromadb
+from core.config import MARKETING_DB_PATH
 from core.config import CHROMA_PATH
 
 client = chromadb.PersistentClient(
@@ -14,7 +15,7 @@ collection = client.get_or_create_collection(
 
 client_openai = OpenAI()
 
-conn = sqlite3.connect("storage/sqlite/marketing.db")
+conn = sqlite3.connect(MARKETING_DB_PATH)
 
 campaigns = pd.read_sql_query(
 	"""
